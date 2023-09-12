@@ -2,12 +2,15 @@ import streamlit as st
 import requests
 import datetime
 
+# Set a custom page title
+st.set_page_config(page_title="Taxi Fare Prediction App", page_icon="🚖")
+
 '''
-# TaxiFareModel front
+# 🚖 TaxiFareModel Frontend 🚖
 '''
 
 st.markdown('''
-**This is my first fronted**
+**Welcome to the Taxi Fare Prediction App!**
 ''')
 
 
