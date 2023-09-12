@@ -41,7 +41,7 @@ prediction = response.json()
 pred = prediction['fare_amount']
 
 st.markdown('''
-            Returning Results)
+            Returning Results
 ''')
 
 st.header(f'The Fare Amount: ${round(pred, 2)}')
