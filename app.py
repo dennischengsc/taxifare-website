@@ -15,7 +15,7 @@ st.markdown('''
 
 # Form for input
 with st.form(key='params_for_api'):
-    st.subheader("The Taxifare Summary are below::")
+    st.subheader("Please fill up the requirements")
     pickup_date = st.date_input('Pickup Date', value=datetime.date(2023, 9, 12))
     pickup_time = st.time_input('Pickup Time', value=datetime.time(10, 0))
     pickup_longitude = st.number_input('Pickup Longitude', value=40.7614327)
@@ -53,7 +53,7 @@ if submitted:
         st.header(f'The Fare Amount: ${round(pred, 2)}')
 
         # Display the input data for reference
-        st.subheader("Input Data")
+        st.subheader("Taxifare Summary")
         st.write(f'Pickup Date and Time: {pickup_datetime}')
         st.write(f'Pickup Longitude: {pickup_longitude}')
         st.write(f'Pickup Latitude: {pickup_latitude}')
