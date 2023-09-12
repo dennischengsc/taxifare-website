@@ -15,7 +15,7 @@ st.markdown('''
 
 # Form for input
 with st.form(key='params_for_api'):
-    st.subheader("Enter Details")
+    st.subheader("The Taxifare Summary are below::")
     pickup_date = st.date_input('Pickup Date', value=datetime.date(2023, 9, 12))
     pickup_time = st.time_input('Pickup Time', value=datetime.time(10, 0))
     pickup_longitude = st.number_input('Pickup Longitude', value=40.7614327)
